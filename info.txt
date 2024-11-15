@@ -1,0 +1,49 @@
+IRC = Internet Relay Chat
+IPC = inter-process communication
+OSI = Open Systems Interconnection model 
+TCP = Transmission Control Protocol
+RFC = A Request for Comments
+htons = host to network short
+
+Ports can vary between (0 - 65535)
+Reason: Because in TCP and UDP, a port number is represented by a 16-bit unsigned integer, and there are three types of ports
+        1- Ports 0 to 1023 are reserved for specific services and protocols, such as HTTP (port 80), FTP (port 21), and SSH (port 22). They require administrative privileges to use
+        2- Ports numbered 1024 to 49151 can be registered for specific purposes and are used by non-standard applications and services.
+        3- Dynamic or private ports (49152 to 65535) are used by client applications for outgoing connections. These ports are dynamically allocated by the operating system to clients when they initiate outgoing connections.
+
+Allowed External Functions:
+
+    -   Socket Operations:
+            socket
+            close
+            setsockopt
+            getsockname
+            getprotobyname
+            gethostbyname
+            getaddrinfo
+            freeaddrinfo
+            bind
+            connect
+            listen
+            accept
+            htons
+            htonl
+            ntohs
+            ntohl
+            inet_addr
+            inet_ntoa
+    -   Data Transmission:
+            send
+            recv
+    -   Signal Handling:
+            signal
+            sigaction
+    -   File Operations:
+            lseek
+            fstat
+            fcntl
+    -   Multiplexing:
+            poll
+
+TCP runs over the Ethernet 
+ 
